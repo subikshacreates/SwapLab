@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Skills | SkillSwap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5 L95 27.5 L95 72.5 L50 95 L5 72.5 L5 27.5 Z" fill="none" stroke="url(#grad1)" stroke-width="5" />
+                    <path d="M50 25 L65 45 L55 45 L55 70 L45 70 L45 45 L35 45 Z" fill="url(#grad1)" />
+                    <path d="M50 75 L35 55 L45 55 L45 30 L55 30 L55 55 L65 55 Z" fill="#1e293b" stroke="url(#grad1)" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">Skill<span class="highlight">Swap</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html" class="active">Browse Skills</a></li>
+                <li><a href="profile.html" class="btn-nav">Create Profile</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="browse-section">
+        <div class="container">
+            <div class="browse-header fade-in">
+                <h2>Find Your Swap Partner</h2>
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search for a skill (e.g. Python)...">
+                </div>
+            </div>
+
+            <div id="profilesGrid" class="grid-3">
+                <!-- Cards injected by JS -->
+            </div>
+
+            <div id="emptyState" class="empty-state hidden">
+                <i class="fas fa-user-friends"></i>
+                <h3>No profiles found yet.</h3>
+                <p>Be the first to create a profile!</p>
+                <a href="profile.html" class="btn btn-secondary">Create Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2023 SkillSwap. Built by <strong>Subiksha Ganesan</strong>.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class

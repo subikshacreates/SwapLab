@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile | SkillSwap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M50 5 L95 27.5 L95 72.5 L50 95 L5 72.5 L5 27.5 Z" fill="none" stroke="url(#grad1)" stroke-width="5" />
+                    <path d="M50 25 L65 45 L55 45 L55 70 L45 70 L45 45 L35 45 Z" fill="url(#grad1)" />
+                    <path d="M50 75 L35 55 L45 55 L45 30 L55 30 L55 55 L65 55 Z" fill="#1e293b" stroke="url(#grad1)" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">Skill<span class="highlight">Swap</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Skills</a></li>
+                <li><a href="profile.html" class="active btn-nav">Create Profile</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-wrapper fade-in">
+                <h2>Join the Community</h2>
+                <p class="form-subtitle">Tell us what you can teach and what you want to learn.</p>
+                
+                <form id="profileForm">
+                    <div class="input-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="college">College / University</label>
+                        <input type="text" id="college" placeholder="e.g. MIT" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="skillsTeach">Skills I Can Teach</label>
+                            <input type="text" id="skillsTeach" placeholder="e.g. Python, Design" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="skillsLearn">Skills I Want to Learn</label>
+                            <input type="text" id="skillsLearn" placeholder="e.g. Public Speaking" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="about">About Me</label>
+                        <textarea id="about" rows="4" placeholder="Tell us a bit about yourself..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Save Profile</button>
+                </form>
+                
+                <div id="successMessage" class="success-msg hidden">
+                    <i class="fas fa-check-circle"></i> Profile saved successfully! <a href="browse.html">View Profiles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2023 SkillSwap. Built by <strong>Subiksha Ganesan</strong>.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+</body>
+</html>

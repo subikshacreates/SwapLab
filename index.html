@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Learn & Teach</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <!-- LOGO START -->
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Hexagon Background -->
+                    <path d="M50 5 L95 27.5 L95 72.5 L50 95 L5 72.5 L5 27.5 Z" fill="none" stroke="url(#grad1)" stroke-width="5" />
+                    <!-- Top Arrow -->
+                    <path d="M50 25 L65 45 L55 45 L55 70 L45 70 L45 45 L35 45 Z" fill="url(#grad1)" />
+                    <!-- Bottom Arrow (Inverse) -->
+                    <path d="M50 75 L35 55 L45 55 L45 30 L55 30 L55 55 L65 55 Z" fill="#1e293b" stroke="url(#grad1)" stroke-width="2"/>
+                </svg>
+                <span class="logo-text">Skill<span class="highlight">Swap</span></span>
+            </a>
+            <!-- LOGO END -->
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="browse.html">Browse Skills</a></li>
+                <li><a href="profile.html" class="btn-nav">Create Profile</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content fade-in">
+            <div class="hero-badge">🚀 The Future of Learning</div>
+            <h1>Master New Skills.<br>Share Your Passion.</h1>
+            <p class="tagline">The student-to-student skill exchange platform. No money, just pure learning.</p>
+            <div class="hero-buttons">
+                <a href="profile.html" class="btn btn-primary">Create Profile</a>
+                <a href="browse.html" class="btn btn-secondary">Browse Skills</a>
+            </div>
+        </div>
+        
+        <!-- Abstract Background Elements -->
+        <div class="hero-bg-shape shape-1"></div>
+        <div class="hero-bg-shape shape-2"></div>
+    </header>
+
+    <!-- How It Works -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="grid-3">
+                <div class="card feature-card">
+                    <div class="icon-box"><i class="fas fa-user-plus"></i></div>
+                    <h3>1. Create Profile</h3>
+                    <p>Sign up and list the skills you can teach and what you want to learn.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon-box"><i class="fas fa-search"></i></div>
+                    <h3>2. Find a Match</h3>
+                    <p>Browse other students. Find someone who needs your help and has what you need.</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                    <h3>3. Swap Skills</h3>
+                    <p>Connect, schedule a session, and exchange knowledge for free!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SkillSwap -->
+    <section class="why-section">
+        <div class="container">
+            <div class="why-content">
+                <h2>Why SkillSwap?</h2>
+                <p>Education shouldn't cost the earth. At SkillSwap, we believe in the power of community learning.</p>
+                <ul class="why-list">
+                    <li><i class="fas fa-check-circle"></i> 100% Free Exchange</li>
+                    <li><i class="fas fa-check-circle"></i> Build your network</li>
+                    <li><i class="fas fa-check-circle"></i> Learn diverse skills</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2023 SkillSwap. Built by <strong>Subiksha Ganesan</strong>.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+</body>
+</html>
