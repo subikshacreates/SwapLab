@@ -3,115 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwapLab | Learn & Teach</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>SwapLab | Student Skill Exchange</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS --><link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
+    <!-- Background Blobs -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="glass-nav">
         <div class="container nav-container">
-            <!-- LOGO START -->
-            <a href="index.html" class="logo-container">
-                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <!-- Hexagon Background -->
-                    <path d="M50 5 L95 27.5 L95 72.5 L50 95 L5 72.5 L5 27.5 Z" fill="none" stroke="url(#grad1)" stroke-width="5" />
-                    <!-- Top Arrow -->
-                    <path d="M50 25 L65 45 L55 45 L55 70 L45 70 L45 45 L35 45 Z" fill="url(#grad1)" />
-                    <!-- Bottom Arrow (Inverse) -->
-                    <path d="M50 75 L35 55 L45 55 L45 30 L55 30 L55 55 L65 55 Z" fill="#1e293b" stroke="url(#grad1)" stroke-width="2"/>
-                </svg>
-                <span class="logo-text">Skill<span class="highlight">Swap</span></span>
-            </a>
-            <!-- LOGO END -->
-            
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="browse.html">Browse Skills</a></li>
-                <li><a href="profile.html" class="btn-nav">Create Profile</a></li>
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>SwapLab</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#browse">Browse</a></li>
+                <li><a href="#profile">Profile</a></li>
             </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
+            <div class="nav-actions">
+                <a href="#" class="btn-primary">Join Now</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-content fade-in">
-            <div class="hero-badge">🚀 The Future of Learning</div>
-            <h1>Master New Skills.<br>Share Your Passion.</h1>
-            <p class="tagline">The student-to-student skill exchange platform. No money, just pure learning.</p>
-            <div class="hero-buttons">
-                <a href="profile.html" class="btn btn-primary">Create Profile</a>
-                <a href="browse.html" class="btn btn-secondary">Browse Skills</a>
+    <header id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <div class="badge-pill">For Students, By Students</div>
+                <h1>Swap Skills. <br> <span class="gradient-text">Grow Together.</span></h1>
+                <p>The premium network where you trade knowledge, not money. Learn coding, design, or music by teaching what you know.</p>
+                <div class="hero-btns">
+                    <a href="#browse" class="btn-primary">Find a Swap</a>
+                    <a href="#how-it-works" class="btn-secondary">How it Works</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card glass-card card-1">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="floating-card glass-card card-2">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Design</span>
+                </div>
+                <div class="floating-card glass-card card-3">
+                    <i class="fa-solid fa-guitar"></i>
+                    <span>Music</span>
+                </div>
             </div>
         </div>
-        
-        <!-- Abstract Background Elements -->
-        <div class="hero-bg-shape shape-1"></div>
-        <div class="hero-bg-shape shape-2"></div>
     </header>
 
-    <!-- How It Works -->
-    <section class="features">
+    <!-- Browse Section -->
+    <section id="browse" class="browse-section">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="grid-3">
-                <div class="card feature-card">
-                    <div class="icon-box"><i class="fas fa-user-plus"></i></div>
-                    <h3>1. Create Profile</h3>
-                    <p>Sign up and list the skills you can teach and what you want to learn.</p>
+            <div class="section-header">
+                <h2>Browse Skills</h2>
+                <p>Find the perfect skill to learn.</p>
+            </div>
+
+            <!-- Search & Filter -->
+            <div class="search-bar glass-card">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="What do you want to learn? (e.g., Python, Guitar)">
+                <button class="btn-primary">Search</button>
+            </div>
+
+            <!-- Filter Tags -->
+            <div class="filters">
+                <button class="filter-tag active">All</button>
+                <button class="filter-tag">Coding</button>
+                <button class="filter-tag">Design</button>
+                <button class="filter-tag">Language</button>
+                <button class="filter-tag">Music</button>
+            </div>
+
+            <!-- Skill Grid -->
+            <div class="grid-container">
+                <!-- Card 1 -->
+                <div class="skill-card glass-card">
+                    <div class="card-header">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="User" class="avatar">
+                        <div class="user-info">
+                            <h4>Sarah J.</h4>
+                            <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Advanced Photoshop</h3>
+                        <p>Photo retouching, compositing, and UI design basics.</p>
+                        <div class="swap-offer">
+                            <span>Offers:</span> <span class="highlight">UI/UX</span>
+                        </div>
+                        <div class="swap-offer">
+                            <span>Wants:</span> <span class="highlight">Spanish</span>
+                        </div>
+                    </div>
+                    <button class="btn-outline">Request Swap</button>
                 </div>
-                <div class="card feature-card">
-                    <div class="icon-box"><i class="fas fa-search"></i></div>
-                    <h3>2. Find a Match</h3>
-                    <p>Browse other students. Find someone who needs your help and has what you need.</p>
+
+                <!-- Card 2 -->
+                <div class="skill-card glass-card">
+                    <div class="card-header">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="User" class="avatar">
+                        <div class="user-info">
+                            <h4>David C.</h4>
+                            <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Python for Data</h3>
+                        <p>Pandas, NumPy, and basic Machine Learning concepts.</p>
+                        <div class="swap-offer">
+                            <span>Offers:</span> <span class="highlight">Coding</span>
+                        </div>
+                        <div class="swap-offer">
+                            <span>Wants:</span> <span class="highlight">Video Edit</span>
+                        </div>
+                    </div>
+                    <button class="btn-outline">Request Swap</button>
                 </div>
-                <div class="card feature-card">
-                    <div class="icon-box"><i class="fas fa-handshake"></i></div>
-                    <h3>3. Swap Skills</h3>
-                    <p>Connect, schedule a session, and exchange knowledge for free!</p>
+
+                <!-- Card 3 -->
+                <div class="skill-card glass-card">
+                    <div class="card-header">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="User" class="avatar">
+                        <div class="user-info">
+                            <h4>Emily R.</h4>
+                            <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>French Language</h3>
+                        <p>Native speaker. Conversational practice and grammar.</p>
+                        <div class="swap-offer">
+                            <span>Offers:</span> <span class="highlight">Language</span>
+                        </div>
+                        <div class="swap-offer">
+                            <span>Wants:</span> <span class="highlight">Web Dev</span>
+                        </div>
+                    </div>
+                    <button class="btn-outline">Request Swap</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why SwapLab -->
-    <section class="why-section">
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
         <div class="container">
-            <div class="why-content">
-                <h2>Why SwapLab?</h2>
-                <p>Education shouldn't cost the earth. At SwapLab, we believe in the power of community learning.</p>
-                <ul class="why-list">
-                    <li><i class="fas fa-check-circle"></i> 100% Free Exchange</li>
-                    <li><i class="fas fa-check-circle"></i> Build your network</li>
-                    <li><i class="fas fa-check-circle"></i> Learn diverse skills</li>
-                </ul>
+            <div class="profile-layout">
+                <!-- Profile Card -->
+                <div class="profile-card glass-card">
+                    <div class="profile-cover"></div>
+                    <div class="profile-content">
+                        <div class="profile-img">
+                            <img src="https://i.pravatar.cc/150?img=68" alt="My Profile">
+                            <div class="status-dot"></div>
+                        </div>
+                        <h2>Alex Morgan</h2>
+                        <p class="uni">Computer Science, NYU</p>
+                        
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <strong>12</strong>
+                                <span>Swaps</span>
+                            </div>
+                            <div class="stat">
+                                <strong>5</strong>
+                                <span>Skills</span>
+                            </div>
+                            <div class="stat">
+                                <strong>98%</strong>
+                                <span>Rating</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary full-width">Edit Profile</button>
+                    </div>
+                </div>
+
+                <!-- Skills Dashboard -->
+                <div class="skills-dashboard">
+                    <div class="dash-header glass-card">
+                        <h3>My Skills Dashboard</h3>
+                        <button class="btn-outline small">+ Add Skill</button>
+                    </div>
+
+                    <!-- Teaching Column -->
+                    <div class="dashboard-col glass-card">
+                        <h4><i class="fa-solid fa-chalkboard-user"></i> I Can Teach</h4>
+                        <div class="skill-tag">JavaScript <span class="level">Advanced</span></div>
+                        <div class="skill-tag">HTML/CSS <span class="level">Expert</span></div>
+                        <div class="skill-tag">React <span class="level">Intermediate</span></div>
+                    </div>
+
+                    <!-- Learning Column -->
+                    <div class="dashboard-col glass-card">
+                        <h4><i class="fa-solid fa-graduation-cap"></i> I Want to Learn</h4>
+                        <div class="skill-tag">Guitar <span class="level pending">Pending Match</span></div>
+                        <div class="skill-tag">Spanish <span class="level pending">Pending Match</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container footer-content">
-            <p>&copy; 2023 SwapLab. Built by <strong>Subiksha Ganesan</strong>.</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+        <p>&copy; 2023 SwapLab. Built for the student community.</p>
     </footer>
 
-    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-    <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

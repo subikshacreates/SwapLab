@@ -1,5 +1,5 @@
 /**
- * SwapLab - Main JavaScript File
+ * swapLab - Main JavaScript File
  * Handles form submissions, LocalStorage, Dynamic Rendering, and Search
  */
 
@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
  * LocalStorage Helper Functions
  */
 function saveProfileToLocal(profile) {
-    let profiles = JSON.parse(localStorage.getItem('SwapLab_profiles')) || [];
+    let profiles = JSON.parse(localStorage.getItem('swapLab_profiles')) || [];
     profiles.push(profile);
-    localStorage.setItem('SwapLab_profiles', JSON.stringify(profiles));
+    localStorage.setItem('swapLab_profiles', JSON.stringify(profiles));
 }
 
 function getProfiles() {
-    return JSON.parse(localStorage.getItem('SwapLab_profiles')) || [];
+    return JSON.parse(localStorage.getItem('swapLab_profiles')) || [];
 }
 
 /**
