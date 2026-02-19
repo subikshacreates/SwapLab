@@ -1,5 +1,5 @@
 /**
- * SkillSwap - Main JavaScript File
+ * SwapLab - Main JavaScript File
  * Handles form submissions, LocalStorage, Dynamic Rendering, and Search
  */
 
@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
  * LocalStorage Helper Functions
  */
 function saveProfileToLocal(profile) {
-    let profiles = JSON.parse(localStorage.getItem('skillswap_profiles')) || [];
+    let profiles = JSON.parse(localStorage.getItem('SwapLab_profiles')) || [];
     profiles.push(profile);
-    localStorage.setItem('skillswap_profiles', JSON.stringify(profiles));
+    localStorage.setItem('SwapLab_profiles', JSON.stringify(profiles));
 }
 
 function getProfiles() {
-    return JSON.parse(localStorage.getItem('skillswap_profiles')) || [];
+    return JSON.parse(localStorage.getItem('SwapLab_profiles')) || [];
 }
 
 /**
