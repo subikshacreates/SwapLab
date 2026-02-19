@@ -10,7 +10,7 @@ This project demonstrates frontend development skills using HTML, CSS, and Vanil
 
 ## 🌟 Live Demo
 
-🔗 https://yourusername.github.io/swaplab/
+🔗 https://subikshacreates.github.io/SwapLab/
 
 ---
 
